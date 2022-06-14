@@ -4,7 +4,7 @@
   "description": "!template-project",
   "main": "src/script.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist",
     "lint": "eslint src/script.js"
@@ -12,10 +12,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "babel-jest": "^28.1.1",
+    "cross-env": "^7.0.3",
+    "eslint-plugin-jest": "^26.5.3",
+    "jest-environment-jsdom": "^28.1.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
-    "@babel/core": "^7.18.2",
+    "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
     "eslint": "^8.17.0",
     "eslint-config-airbnb": "^19.0.4",

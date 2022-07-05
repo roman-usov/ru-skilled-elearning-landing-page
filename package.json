@@ -1,7 +1,7 @@
 {
   "name": "template-project",
   "version": "1.0.0",
-  "description": "!template-project",
+  "description": "E-Learning",
   "main": "src/script.js",
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
@@ -25,6 +25,8 @@
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
     "@happy-dom/jest-environment": "^5.3.0",
+    "@parcel/packager-raw-url": "^2.6.0",
+    "@parcel/transformer-webmanifest": "^2.6.0",
     "eslint": "^8.17.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-node": "^4.1.0",

@@ -4,12 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" href="images/learn_favicon_64.png" />
+    <link rel="apple-touch-icon" href="images/learn_favicon_ios_180.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
     <script src="src/script.js" defer></script>
 
-    <title>Template</title>
+    <title>E-Learning</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container container-header">
+        <a class="logo" href="#">
+          <img src="images/logo-dark.svg" alt="skilled logo" />
+        </a>
+        <nav class="main-nav">
+          <a href="#" class="nav-get-started-btn">Get Started</a>
+        </nav>
+      </div>
+      <div class="wrapper-hero-image">
+        <picture>
+          <source
+            srcset="images/image-hero-desktop@2x.webp"
+            type="image/webp"
+          />
+          <source srcset="images/image-hero-desktop@2x.png" type="image/png" />
+          <img
+            src="images/image-hero-desktop@2x.png"
+            alt="A woman sitting at a laptop drinking from a mug, blocks displaying 1,451 course hours and 29k members"
+            class="hero-image"
+          />
+        </picture>
+      </div>
+    </header>
 
+    <main>
+      <!--      HERO SECTION -->
+
+      <section class="section section-hero">
+        <div class="hero-text-box">
+          <h1 class="heading main-heading">Maximize skill, minimize budget</h1>
+          <p class="text">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <a href="#" class="hero-get-started-btn">Get Started</a>
+        </div>
+      </section>
+
+      <!--      COURSES SECTION -->
+      <section class="section section-courses">
+        <div class="container grid grid--3--cols">
+          <article class="courses check-courses-box">
+            <h2 class="heading medium-heading">
+              Check out our most popular courses!
+            </h2>
+          </article>
+          <article class="courses course-box">
+            <h3 class="heading small-heading">Animation</h3>
+            <div class="align-vertically-box">
+              <p class="text">
+                Learn the latest animation techniques to create stunning motion
+                design and captivate your audience.
+              </p>
+              <a href="#" class="courses-get-started-btn">Get Started</a>
+              <img
+                src="images/icon-animation.svg"
+                alt="animation course logo"
+                class="course-icon"
+              />
+            </div>
+          </article>
+          <article class="courses course-box">
+            <h3 class="heading small-heading">Design</h3>
+            <div class="align-vertically-box">
+              <p class="text">
+                Create beautiful, usable interfaces to help shape the future of
+                how the web looks.
+              </p>
+              <a href="#" class="courses-get-started-btn">Get Started</a>
+              <img
+                src="images/icon-design.svg"
+                alt="design course logo"
+                class="course-icon"
+              />
+            </div>
+          </article>
+          <article class="courses course-box">
+            <h3 class="heading small-heading">Photography</h3>
+            <div class="align-vertically-box">
+              <p class="text">
+                Explore critical fundamentals like lighting, composition, and
+                focus to capture exceptional photos.
+              </p>
+              <a href="#" class="courses-get-started-btn">Get Started</a>
+              <img
+                src="images/icon-photography.svg"
+                alt="photography course logo"
+                class="course-icon"
+              />
+            </div>
+          </article>
+          <article class="courses course-box">
+            <h3 class="heading small-heading">Crypto</h3>
+            <div class="align-vertically-box">
+              <p class="text">
+                All you need to know to get started investing in crypto. Go from
+                beginner to advanced with this 54 hour course.
+              </p>
+              <a href="#" class="courses-get-started-btn">Get Started</a>
+              <img
+                src="images/icon-crypto.svg"
+                alt="crypto course logo"
+                class="course-icon"
+              />
+            </div>
+          </article>
+          <article class="courses course-box">
+            <h3 class="heading small-heading">Business</h3>
+            <div class="align-vertically-box">
+              <p class="text">
+                A step-by-step playbook to help you start, scale, and sustain
+                your business without outside investment.
+              </p>
+              <a href="#" class="courses-get-started-btn">Get Started</a>
+              <img
+                src="images/icon-business.svg"
+                alt="business course logo"
+                class="course-icon"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container container-footer">
+        <a class="logo" href="#">
+          <img src="images/logo-light.svg" alt="skilled logo" />
+        </a>
+        <nav class="main-nav">
+          <a href="#" class="footer-nav-get-started-btn">Get Started</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

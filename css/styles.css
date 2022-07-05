@@ -3,17 +3,6 @@
 /**************************/
 
 .header {
-  position: relative;
-}
-
-.header,
-.footer {
-  width: 144rem;
-  margin: 0 auto;
-}
-
-.container-header,
-.container-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,18 +46,6 @@
   flex-shrink: 0;
   flex-basis: 45.7rem;
   padding-top: 18.557rem;
-  margin-left: 16.5rem;
-}
-
-.wrapper-hero-image {
-  width: 690px;
-  height: 937px;
-  overflow: hidden;
-  /*background-color: blue;*/
-  position: absolute;
-  left: 750px;
-  top: -135px;
-  pointer-events: none;
 }
 
 .hero-image {
@@ -108,39 +85,67 @@
 .section-courses {
   margin-top: 25rem;
   padding-bottom: 14rem;
-  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+.section-courses .medium-heading {
+  color: #fff;
 }
 
 .check-courses-box {
   background: linear-gradient(to bottom, #ff6f48, #f02aa6);
   padding: 6.4rem 3.2rem 13.8rem;
-}
-
-.check-courses-box .medium-heading {
-  color: #fff;
-}
-
-.courses {
-  border: none;
-  height: 32.3rem;
   border-radius: 15px;
 }
 
 .course-box {
+  border: none;
+  border-radius: 15px;
   box-shadow: 0 25px 50px rgba(6, 22, 141, 0.0442381);
   background-color: #fff;
   padding: 6.4rem 3.2rem 4rem;
   position: relative;
-}
-
-.align-vertically-box {
   display: flex;
   flex-direction: column;
-  height: 16.4rem;
+  height: 100%;
 }
 
-.align-vertically-box .text {
-  margin-bottom: 0;
+.course-animation::after,
+.course-design::after,
+.course-photography::after,
+.course-crypto::after,
+.course-business::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  position: absolute;
+  top: -24px;
+  left: 32px;
+}
+
+.course-animation::after {
+  background-image: url('../images/icon-animation.svg');
+}
+
+.course-design::after {
+  background-image: url('../images/icon-design.svg');
+}
+
+.course-photography::after {
+  background-image: url('../images/icon-photography.svg');
+}
+
+.course-crypto::after {
+  background-image: url('../images/icon-crypto.svg');
+}
+
+.course-business::after {
+  background-image: url('../images/icon-business.svg');
+}
+
+.course-box .text {
+  margin-bottom: 2.4rem;
   flex: 1;
 }
 
@@ -156,23 +161,14 @@
   color: #ffa7c3;
 }
 
-.course-icon {
-  height: 56px;
-  width: 56px;
-  position: absolute;
-  top: -24px;
-  left: 32px;
-}
-
 /**************************/
 /* FOOTER SECTION */
 /**************************/
 
 .footer {
-  background-color: #13183f;
-}
-
-.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 3.2rem 0;
 }
 

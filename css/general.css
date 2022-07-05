@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   /* font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
@@ -17,15 +22,27 @@ body {
   line-height: 2.8rem;
   color: #83869a;
   background-color: #fff;
-}
-
-.section {
-  width: 144rem;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-  margin: 0 16.5rem;
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+.wrapper-white {
+  background-color: #fff;
+}
+
+.wrapper-gradient {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  flex: 1 0 auto;
+}
+
+.wrapper-blue {
+  background-color: #13183f;
+  flex-shrink: 0;
 }
 
 .heading {

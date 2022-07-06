@@ -15,8 +15,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!--    <link rel="stylesheet" href="css/styles_old.css" />-->
     <link rel="stylesheet" href="css/responsive.css" />
 
     <script src="src/script.js" defer></script>
@@ -24,97 +24,111 @@
     <title>E-Learning</title>
   </head>
   <body>
-    <div class="wrapper-white">
-      <div class="container">
+    <div class="wrapper wrapper_background_white">
+      <div class="wrapper__container">
+        <!--      HEADER -->
         <header class="header">
-          <!--      HEADER -->
-          <a class="logo" href="#">
-            <img src="images/logo-dark.svg" alt="skilled logo" />
+          <a class="header__logo" href="#">
+            <img src="images/logo-dark.svg" alt="skilled" />
           </a>
 
-          <a href="#" class="nav-get-started-btn">Get Started</a>
+          <a href="#" class="get-started-btn get-started-btn_top-layer"
+            >Get Started</a
+          >
         </header>
-
-        <!--      HERO SECTION -->
-        <section class="section-hero">
-          <div class="hero-text-box">
-            <h1 class="heading main-heading">
-              Maximize skill, minimize budget
-            </h1>
-            <p class="text">
-              Our modern courses across a range of in-demand skills will give
-              you the knowledge you need to live the life you want.
-            </p>
-            <a href="#" class="hero-get-started-btn">Get Started</a>
-          </div>
-
-          <div class="image-text-box"></div>
-        </section>
       </div>
     </div>
 
-    <div class="wrapper-gradient">
-      <div class="container">
-        <!--      COURSES SECTION -->
-        <section class="section-courses">
-          <div class="container grid grid--3--cols">
-            <h2 class="heading medium-heading check-courses-box">
-              Check out our most popular courses!
-            </h2>
+    <div class="wrapper wrapper_background_gradient wrapper_expand">
+      <div class="wrapper__container">
+        <main>
+          <!--      HERO SECTION -->
+          <section class="section-hero">
+            <div class="hero-text-box">
+              <h1 class="hero-text-box__heading">
+                Maximize skill, minimize budget
+              </h1>
+              <p class="hero-text-box__text">
+                Our modern courses across a range of in-demand skills will give
+                you the knowledge you need to live the life you want.
+              </p>
+              <a href="#" class="get-started-btn get-started-btn_hero"
+                >Get Started</a
+              >
+            </div>
 
-            <article class="course-box course-animation">
-              <h3 class="heading small-heading">Animation</h3>
-              <p class="text">
-                Learn the latest animation techniques to create stunning motion
-                design and captivate your audience.
-              </p>
-              <a href="#" class="courses-get-started-btn">Get Started</a>
-            </article>
-            <article class="course-box course-design">
-              <h3 class="heading small-heading">Design</h3>
-              <p class="text">
-                Create beautiful, usable interfaces to help shape the future of
-                how the web looks.
-              </p>
-              <a href="#" class="courses-get-started-btn">Get Started</a>
-            </article>
-            <article class="course-box course-photography">
-              <h3 class="heading small-heading">Photography</h3>
-              <p class="text">
-                Explore critical fundamentals like lighting, composition, and
-                focus to capture exceptional photos.
-              </p>
-              <a href="#" class="courses-get-started-btn">Get Started</a>
-            </article>
-            <article class="course-box course-crypto">
-              <h3 class="heading small-heading">Crypto</h3>
-              <p class="text">
-                All you need to know to get started investing in crypto. Go from
-                beginner to advanced with this 54 hour course.
-              </p>
-              <a href="#" class="courses-get-started-btn">Get Started</a>
-            </article>
-            <article class="course-box course-business">
-              <h3 class="heading small-heading">Business</h3>
-              <p class="text">
-                A step-by-step playbook to help you start, scale, and sustain
-                your business without outside investment.
-              </p>
-              <a href="#" class="courses-get-started-btn">Get Started</a>
-            </article>
-          </div>
-        </section>
+            <div class="hero-image-box">
+              <div class="hero-image">
+                <div class="hero-image__vertical"></div>
+                <div class="hero-image__diagonal"></div>
+              </div>
+            </div>
+          </section>
+
+          <!--      COURSES SECTION -->
+          <section class="section-courses">
+            <div class="courses">
+              <h2 class="courses__heading">
+                Check out our most popular courses!
+              </h2>
+
+              <article class="courses__box courses__box_icon_animation">
+                <h3 class="courses__subheading">Animation</h3>
+                <p class="courses__text">
+                  Learn the latest animation techniques to create stunning
+                  motion design and captivate your audience.
+                </p>
+                <a href="#" class="courses__link">Get Started</a>
+              </article>
+              <article class="courses__box courses__box_icon_design">
+                <h3 class="courses__subheading">Design</h3>
+                <p class="courses__text">
+                  Create beautiful, usable interfaces to help shape the future
+                  of how the web looks.
+                </p>
+                <a href="#" class="courses__link">Get Started</a>
+              </article>
+              <article class="courses__box courses__box_icon_photography">
+                <h3 class="courses__subheading">Photography</h3>
+                <p class="courses__text">
+                  Explore critical fundamentals like lighting, composition, and
+                  focus to capture exceptional photos.
+                </p>
+                <a href="#" class="courses__link">Get Started</a>
+              </article>
+              <article class="courses__box courses__box_icon_crypto">
+                <h3 class="courses__subheading">Crypto</h3>
+                <p class="courses__text">
+                  All you need to know to get started investing in crypto. Go
+                  from beginner to advanced with this 54 hour course.
+                </p>
+                <a href="#" class="courses__link">Get Started</a>
+              </article>
+              <article class="courses__box courses__box_icon_business">
+                <h3 class="courses__subheading">Business</h3>
+                <p class="courses__text">
+                  A step-by-step playbook to help you start, scale, and sustain
+                  your business without outside investment.
+                </p>
+                <a href="#" class="courses__link">Get Started</a>
+              </article>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
 
-    <div class="wrapper-blue">
-      <div class="container">
+    <div class="wrapper wrapper_background_blue">
+      <div class="wrapper__container">
         <!--      FOOTER -->
         <footer class="footer">
-          <a class="logo" href="#">
+          <a class="footer__logo" href="#">
             <img src="images/logo-light.svg" alt="skilled logo" />
           </a>
-          <a href="#" class="footer-nav-get-started-btn">Get Started</a>
+
+          <a href="#" class="get-started-btn get-started-btn_footer"
+            >Get Started</a
+          >
         </footer>
       </div>
     </div>

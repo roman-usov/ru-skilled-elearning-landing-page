@@ -24,6 +24,10 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+}
+
+.external-wrapper {
 }
 
 .wrapper {
@@ -161,6 +165,7 @@ body {
   position: relative;
   height: 100%;
   margin-top: 8.7rem;
+  /*overflow: hidden;*/
 }
 
 .hero-image__vertical {

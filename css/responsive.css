@@ -84,7 +84,7 @@
 
   .e-learning-info_hours {
     padding: 1.6rem 4.5rem 1.6rem 2rem;
-    max-width: 15.5rem;
+    min-width: 15.5rem;
     margin-bottom: -3.77rem;
     margin-left: -4.5rem;
   }

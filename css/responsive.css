@@ -87,8 +87,6 @@
     max-width: 15.5rem;
     margin-bottom: -3.77rem;
     margin-left: -4.5rem;
-    /*top: 32rem;*/
-    /*left: -4.5rem;*/
   }
 
   .e-learning-info_members {
@@ -96,8 +94,6 @@
     max-width: 10.5rem;
     margin-top: -1.4rem;
     margin-left: 16.27rem;
-    /*top: -1.4rem;*/
-    /*right: -5.1rem;*/
   }
 
   .e-learning-info__small-heading {
@@ -145,47 +141,48 @@
 /**************************/
 
 @media (max-width: 48em) {
+  .wrapper__container {
+    max-width: 37.5rem;
+    padding: 0 1.6rem;
+  }
+
   .section-hero {
     display: flex;
     flex-direction: column;
-    /*gap: 28rem;*/
-    margin-top: 8.7rem;
+    gap: 7rem;
+    margin-top: 3.8rem;
+    margin-bottom: 9rem;
+  }
+
+  .hero-text-box {
+    margin: 0 auto;
+    padding-top: 0;
   }
 
   .hero-image-box {
-    /*flex-grow: 0;*/
-    flex-basis: 31.7rem;
+    margin: 0 auto;
   }
   .hero-image {
-    /*position: relative;*/
     display: grid;
     grid-template-columns: repeat(1, 25.3rem);
     grid-template-rows: repeat(1, 1fr);
-    /*height: 25.3rem;*/
-    /*width: 25.3rem;*/
+    height: 25.3rem;
+    width: 25.3rem;
   }
 
   .hero-image::before {
-    content: '';
-    display: block;
+    position: static;
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: center;
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
     width: 25.3rem;
     height: 25.3rem;
     border-radius: 50%;
     background-image: url(../images/main-image.png),
       linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
-    /*background-size: 25.3rem;*/
     background-size: cover;
-    /*background-position: 50% -25%;*/
-    background-position: 0 -25%;
+    background-position: top 15px left, top left;
     background-repeat: no-repeat;
-
-    /*z-index: 1;*/
   }
 
   .hero-image::after {
@@ -193,26 +190,33 @@
   }
 
   .e-learning-info_hours {
-    /*padding: 2rem 7.2rem 2rem 2.4rem;*/
-    /*max-width: 19.9rem;*/
-    /*z-index: 2;*/
-    /*align-self: end;*/
-    margin-left: 0;
-    margin-bottom: 0;
+    margin-left: -3.7rem;
+    margin-bottom: -2.5rem;
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: end;
   }
 
   .e-learning-info_members {
-    /*padding: 2rem 5.7rem 2rem 2.4rem;*/
-    /*max-width: 15.5rem;*/
-    /*z-index: 2;*/
-    /*align-self: start;*/
-    margin-left: 0;
-    margin-top: 0;
+    min-width: 10.5rem;
+    margin-left: 18.5rem;
+    margin-top: -2.4rem;
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: start;
+  }
+
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4rem;
+  }
+
+  .section-courses {
+    margin-top: 0;
+    padding-bottom: 8rem;
+  }
+
+  .courses__heading {
+    padding: 2.4rem 2.9rem 3.2rem 2.8rem;
   }
 }

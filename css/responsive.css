@@ -134,6 +134,10 @@
   .courses__link:visited {
     font-size: 1.8rem;
   }
+
+  .no-flexbox-gap .hero-text-box {
+    margin-right: 3.33rem;
+  }
 }
 
 /**************************/
@@ -219,5 +223,9 @@
 
   .courses__heading {
     padding: 2.4rem 2.9rem 3.2rem 2.8rem;
+  }
+
+  .no-flexbox-gap .hero-text-box {
+    margin-bottom: 7rem;
   }
 }
